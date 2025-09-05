@@ -51,3 +51,28 @@ const obj5 = Object.assign(obj1, obj2, {5: "e"}); // merging of 2 objects with n
 // console.log(obj4);
 // console.log(obj5);
 // console.log(obj1); // it will change obj1 also because obj1 is passed by reference in obj5
+
+// console.log(Object.keys(jsUser)); // it will print all keys of object in array
+// console.log(Object.values(jsUser)); // it will print all values of object in array
+// console.log(Object.entries(jsUser)); // it will print all entries of object in array of arrays
+// console.log(Object.hasOwn(jsUser, "name")); // it will check if object has own property or not
+
+
+// for(let key in jsUser){
+//     //console.log(key); // it will print all keys of object  
+//     console.log(jsUser[key]); // it will print all values of object
+// }    
+
+// for(let key of Object.keys(jsUser)){
+//     console.log(key); // it will print all keys of object            
+// }
+// for(let value of Object.values(jsUser)){
+//     console.log(value); // it will print all values of object    
+// }
+
+//object destructuring
+    // const {name, age, location} = jsUser; // it will create 3 variables
+    // const {email: userMail} = jsUser; // it will create variable userMail
+
+    //     console.log(userMail);
+    //     console.log(name, age, location);
